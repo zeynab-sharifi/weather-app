@@ -26,8 +26,8 @@ async function getWeather (city) {
              <small class="my-2">${today.condition}</small>
 			<div class="btn-weather my-3">
 				<a href="#" class="btn btn-primary">${today.min}</a>
-				<a href="#" class="btn btn-danger">${today.max}</a>
 				<a href="#" class="btn btn-warning">${now_temp}</a>
+				<a href="#" class="btn btn-danger">${today.max}</a>
 			</div>
          </div>
     </div>
