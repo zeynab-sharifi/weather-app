@@ -1,6 +1,9 @@
+
 let app = document.querySelector("#app")
 
+
 async function getWeather (city) {
+	// add api 
 	let response = await fetch (
 		`https://developers.parsijoo.ir/web-service/v1/weather/?type=search&city=${city}`,
 		{
@@ -12,6 +15,7 @@ async function getWeather (city) {
 	console.log(data.result.hava.dayList[0])
 	let now_temp = data.result.hava.summary.temp
 	let today = data.result.hava.dayList[0];
+	// html code
 	app.innerHTML = `
 	<div class="card" mx-auto>
          <div class="weather-icone">
@@ -31,6 +35,7 @@ async function getWeather (city) {
 }
 // getWeather("تهران")
 
+// Send the city and receive the amount of weather 
 let city = document.querySelector("#city")
 city.addEventListener("submit",e=>{
 	e.preventDefault()
