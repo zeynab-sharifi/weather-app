@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>weather-app</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="weather-icons/css/weather-icons.min.css">
+	<style>
+		.weather-icone{
+			height: 12rem;
+			display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    font-size: 5rem;
+		}
+		input{
+			width: 100%;
+			border-radius: 7px;
+			padding: 5px 7px;
+			border: 1px solid #999;
+			margin: 2rem auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="w-50 mx-auto my-3">
+			<h1 class="text-center">برنامه هواشناسی</h1>
+			<hr>
+			<div class="row">
+				<div class="col-md-7 mx-auto">
+					<form id="city">
+						<input placeholder="شهر مورد نظر را وارد کنید" name="city" class="form-control mb-3">
+					</form>
+					<div id="app">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="./weather.js"></script>
+</body>
+</html>
